@@ -9,6 +9,8 @@
     @include respond(lg) {
         gap: 40px;
     }
+
+
   }
   .portfolio-subheading {
     color: var(--lightpink);
@@ -34,7 +36,7 @@
     width: 100%;
     height: 200px;
     object-fit: contain;
-    background: pink;
+    background: #ffb5b5;
   }
   .portfolio-card {
     display: flex;
@@ -42,15 +44,21 @@
     align-items: flex-start;
     gap: 32px;
     background: var(--lightpink);
+    color: var(--bg-shade);
     box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    text-decoration: none;
     @include respond(lg) {
         width: 275px;
     }
     @include respond(xl) {
         width: 375px;
+    }
+
+    &:hover {
+        .portfolio-card-link {
+            color: var(--darklavender)
+        }
     }
   }
   .portfolio-card-content {
@@ -59,8 +67,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+    justify-content: space-between;
     align-self: stretch;
     color: var(--bg-shade);
+    height: 100%;
   }
   .portfolio-card-title {
     color: var(--bg-shade);
@@ -72,13 +82,4 @@
     border-bottom: 1.33px solid var(--primary);
     padding-bottom: 10.6px;
     font-weight: 600;
-  }
-  .portfolios-card:hover path {
-    stroke: #006b6a;
-  }
-  
-  @include respond(md) {
-    .portfolio-container {
-      flex-direction: row;
-    }
   }
