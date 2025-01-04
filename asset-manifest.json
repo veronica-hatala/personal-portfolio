@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a2888e21.css",
+    "main.js": "/static/js/main.3e4908f5.js",
+    "static/js/453.b21437c2.chunk.js": "/static/js/453.b21437c2.chunk.js",
+    "static/media/vecteezy_the-dust-sparks-and-golden-stars-shine-with-special-light_11231881.jpg": "/static/media/vecteezy_the-dust-sparks-and-golden-stars-shine-with-special-light_11231881.2e772738aae3739b0157.jpg",
+    "static/media/Winter Minie.ttf": "/static/media/Winter Minie.d982ebee083e39ca0910.ttf",
+    "index.html": "/index.html",
+    "main.a2888e21.css.map": "/static/css/main.a2888e21.css.map",
+    "main.3e4908f5.js.map": "/static/js/main.3e4908f5.js.map",
+    "453.b21437c2.chunk.js.map": "/static/js/453.b21437c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2888e21.css",
+    "static/js/main.3e4908f5.js"
+  ]
+}
