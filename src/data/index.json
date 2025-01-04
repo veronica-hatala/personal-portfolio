@@ -2,7 +2,7 @@
     "projects": [
       {
         "id": "1",
-        "src": "./img/product-chain-1.png",
+        "src": "./images/portfolio/IHH.png",
         "title": "Interfaith Harmony Halifax Events Plugin",
         "description": "An easy way to update IHH events. Using WordPress and PHP.",
         "link": "https://github.com/veronica-hatala/interfaithharmonyhfx-calendar",
@@ -10,7 +10,7 @@
       },
       {
         "id": "2",
-        "src": "./img/tag-1.png",
+        "src": "./images/portfolio/Dressup.png",
         "title": "Dress Up",
         "description": "Dress up your character in different outfits! Using React and SASS.",
         "link": "https://github.com/veronica-hatala/dressup-react",
@@ -18,7 +18,7 @@
       },
       {
         "id": "3",
-        "src": "./img/feather-pen-2.png",
+        "src": "./images/portfolio/Portfolio.png",
         "title": "Personal Portfolio",
         "description": "What you're looking at now! My personal website. Using React and SASS.",
         "link": "https://github.com/veronica-hatala/personal-portfolio",
@@ -28,7 +28,7 @@
     "volunteer": [
         {
           "id": "1",
-          "src": "./img/product-chain-1.png",
+          "src": "./images/portfolio/IHH.png",
           "title": "Interfaith Harmony Halifax",
           "description": "Using WordPress and PHP.",
           "link": "https://interfaithharmonyhfx.org/",
@@ -36,7 +36,7 @@
         },
         {
           "id": "2",
-          "src": "./img/tag-1.png",
+          "src": "./images/portfolio/ESSNS.png",
           "title": "Earth Spirit Society of Nova Scotia",
           "description": "Using WordPress and PHP.",
           "link": "https://essns.org/",

@@ -2,21 +2,21 @@ import data from "../../data/index.json";
 
 export default function MySkills() {
   return (
-    <section className="skills--section" id="mySkills">
-      <h2 className="skills--section--heading">Featured Projects</h2>
-      <div className="skills--section--subheading">Volunteer Projects</div>
-      <div className="portfolio--section--container">
+    <section className="section portfolio-section" id="mySkills">
+      <h2 className="section-heading portfolio-heading">Featured Projects</h2>
+      <div className="portfolio-subheading">Volunteer Projects</div>
+      <div className="portfolio-container">
         {data?.volunteer?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-          <div className="portfolio--section--img">
+          <div key={index} className="portfolio-card">
+          <div className="portfolio-img">
             <img src={item.src} alt="Placeholder" />
           </div>
-          <div className="portfolio--section--card--content">
+          <div className="portfolio-card-content">
             <div>
-              <h3 className="portfolio--section--title">{item.title}</h3>
+              <h3 className="portfolio-card-title">{item.title}</h3>
               <p>{item.description}</p>
             </div>
-            <a className="portfolio--link" href={item.link}>
+            <a className="portfolio-card-link" href={item.link}>
               {item.displaylink}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,19 +38,19 @@ export default function MySkills() {
         </div>
         ))}
       </div>
-      <div className="skills--section--subheading">Personal Projects</div>
-      <div className="portfolio--section--container">
+      <div className="portfolio-subheading">Personal Projects</div>
+      <div className="portfolio-container">
         {data?.projects?.map((item, index) => (
-          <div key={index} className="portfolio--section--card">
-          <div className="portfolio--section--img">
+          <div key={index} className="portfolio-card">
+          <div className="portfolio-img">
             <img src={item.src} alt="Placeholder" />
           </div>
-          <div className="portfolio--section--card--content">
+          <div className="portfolio-card-content">
             <div>
-              <h3 className="portfolio--section--title">{item.title}</h3>
+              <h3 className="portfolio-card-title">{item.title}</h3>
               <p>{item.description}</p>
             </div>
-            <a className="portfolio--link" href={item.link}>
+            <a className="portfolio-card-link" href={item.link}>
               {item.displaylink}
               <svg
                 xmlns="http://www.w3.org/2000/svg"

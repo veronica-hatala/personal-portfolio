@@ -3,10 +3,10 @@ import { FaPhp, FaSass, FaWordpress, FaReact } from "react-icons/fa";
 
 export default function HeroSection() {
     return (
-        <section id="heroSection" className="hero-section">
+        <section id="heroSection" className="section hero-section">
             <div className="hero-section-left-box">
                 <div className="hero-section-left"> 
-                    <p className="section-title">
+                    <p className="hero-section-name">
                         Veronica Hatala
                     </p>
                     <h1 className="hero-section-title">

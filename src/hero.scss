@@ -1,0 +1,132 @@
+/* Hero Section Style */
+.hero-section.section {
+    display: grid;
+    align-items: center;
+    gap: 32px;
+    padding-top: 50px;
+    background-color: var(--bg-shade);
+    //by ROMAN HORDIEIEV on Vecteezy (free with accredidation)
+    background-image: url('../public/images/vecteezy_the-dust-sparks-and-golden-stars-shine-with-special-light_11231881.jpg');
+    background-blend-mode: overlay;
+    min-height: 375px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include respond(lg) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      padding-top: 155px;
+    }
+    .hero-section-left-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include respond(lg) {
+        align-items: flex-start;
+        gap: 25px;
+      }
+    }
+    .hero-section-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 21.333px;
+      @include respond(lg) {
+        align-items: flex-start;
+      }
+    }
+    .hero-section-right-box {
+      height: 100%;
+    }
+    .hero-section-right {
+      display: grid;
+      align-items: end;
+      gap: 25px;
+      justify-items: center;
+      height: 100%;
+      @include respond(lg) {
+        gap: unset;
+      }
+    }
+  }
+  .hero-section-button-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 21.333px;
+    @include respond(sm) {
+      flex-direction: row;
+    }
+  }
+  .hero-section-name {
+    color: var(--lightpink);
+    font-style: italic;
+    font-size: 24px;
+  }
+  .hero-section-title {
+    color: var(--darkpink);
+    align-self: stretch;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 54px;
+    line-height: 54px;
+    @include respond(lg) {
+      text-align: left;
+      font-size: 74px;
+      line-height: 78px;
+    }
+  }
+  .hero-section-title-color {
+    color: var(--primary);
+  }
+  .hero-section-description {
+    color: var(--lightpink);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+    @include respond(lg) {
+      text-align: left;
+    }
+  
+  }
+  .hero-section-profile-pic {
+    align-self: center;
+    border: 20px solid var(--lightpink);
+    border-radius: 150px;
+    display: flex;
+    background: white;
+  }
+  .hero-section-profile-pic > img {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+  }
+  .hero-section-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    @include respond(lg) {
+      flex-wrap: nowrap;
+    }
+    svg {
+      height: 100px;
+      width: 100px;
+  
+      &:nth-of-type(1n) {
+        color: #ffa5a5;
+      }
+      &:nth-of-type(2n) {
+        color: #ffffc2;
+      }
+      &:nth-of-type(3n) {
+        color: #c8e7ed;
+      }
+      &:nth-of-type(4n) {
+        color: #bfcfff;
+      }
+    }
+  }
+  /* Hero Section Style Ends */

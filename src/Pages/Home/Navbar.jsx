@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
     const [navActive, setNavActive] = useState(false);
@@ -38,9 +40,8 @@ function Navbar() {
             className={`nav__hamburger ${navActive ? "active" : ""}`}
             onClick={toggleNav}
           >
-            <span className="nav__hamburger__line"></span>
-            <span className="nav__hamburger__line"></span>
-            <span className="nav__hamburger__line"></span>
+            <div className="hamburger-icon"><GiHamburgerMenu /></div>
+            <div className="x-icon"><IoMdClose /></div>
           </a>
           <div className={`navbar--items ${navActive ? "active" : ""}`}>
             <ul>

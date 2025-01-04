@@ -1,0 +1,115 @@
+
+/* Navbar Style Start */
+.navbar {
+    font-family: winterMinie, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--navbar);
+    box-shadow: 0px 5.333px 80px 0 rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    @include respond(lg) {
+      padding: 15px 85.333px;
+    }
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+  .navbar--items > ul {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 42.667px;
+    text-decoration: none;
+  }
+  .navbar--items ul > li > a {
+    text-decoration: none;
+  }
+  /* Navbar Content */
+  .navbar--content {
+    color: var(--lightpink);
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .navbar--active-content {
+    color: var(--primary);
+  }
+
+/* Hamburger menu  */
+
+.nav__hamburger {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .nav__hamburger {
+      display: flex;
+      z-index: 200;
+    }
+    .navbar--items {
+      display: flex;
+    }
+    .navbar--items {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--navbar);
+      top: -22rem;
+      left: 0;
+      width: 100%;
+      transition: all ease-in-out 0.4s;
+    }
+    .navbar--items ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 3rem 0 2rem;
+      z-index: -100;
+    }
+    .navbar--items ul li {
+      text-align: center;
+    }
+    .navbar--items ul li a {
+      padding: 0.5rem;
+    }
+    .navbar--items {
+      z-index: -1000;
+    }
+    .navbar--items.active {
+      top: 0px;
+    }
+    .nav__hamburger {
+      .hamburger-icon {
+        display: block;
+      }
+      .x-icon {
+        display: none;
+      }
+    }
+    .nav__hamburger.active {
+      .hamburger-icon {
+        display: none;
+      }
+      .x-icon {
+        display: block;
+      }
+    }
+  }

@@ -3,8 +3,8 @@ import { MdEmail } from "react-icons/md";
 
 export default function ContactMe() {
     return (
-      <section id="Contact" className="about-section">
-          <h2 className="about-heading">Contact Me</h2>
+      <section id="Contact" className="section contact-section">
+          <h2 className="section-heading contact-heading">Contact Me</h2>
           <p className="contact-content">
             <a className="contact-info" href="mailto:veronica.hatala@gmail.com">
                 <MdEmail />
